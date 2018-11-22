@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+}
+
+.excel td, .excel th {
+    text-align: left;
+    height: 30px;
+    width: 65px;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    padding: 5px;
+}
+
+.excel td input {
+    width: 60px;
+    height: 25px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
