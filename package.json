@@ -2,6 +2,7 @@
   "name": "spreadsheet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maxtox3.github.io/spreadsheet/",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
@@ -10,6 +11,8 @@
     "react-scripts-kotlin": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-kotlin start",
     "build": "react-scripts-kotlin build",
     "eject": "react-scripts-kotlin eject",
