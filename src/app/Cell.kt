@@ -68,8 +68,10 @@ class Cell(props: CellProps) : RComponent<CellProps, CellState>(props) {
         val target = event.target as HTMLInputElement
         val expression = target.value
 
-        val resultCell = props.cell.copy(expression = expression)
-        this.props.onExpressionEntered(resultCell, props.position)
+        if (expression.isNotEmpty()) {
+            val resultCell = props.cell.copy(expression = expression)
+            this.props.onExpressionEntered(resultCell, props.position)
+        }
         setState {
             isInput = false
         }

@@ -32,7 +32,6 @@ class TableBar(props: TableProps) : RComponent<TableProps, TableState>(props) {
     }
 
     override fun RBuilder.render() {
-        console.log("render table")
         table(classes = "excel") {
             tbody {
                 tr {

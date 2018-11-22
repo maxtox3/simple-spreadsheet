@@ -10,10 +10,10 @@ fun parseExpressionToModel(value: String): Expression {
     val withoutEqually = withoutSpaces.substring(1)
 
     //по тупому берем каждый знак :)
-    val col1 = withoutEqually[0]
+    val col1 = withoutEqually[0].toUpperCase()
     val row1 = withoutEqually[1].toString().toIntOrNull()
     val operand = withoutEqually[2]
-    val col2 = withoutEqually[3]
+    val col2 = withoutEqually[3].toUpperCase()
     val row2 = withoutEqually[4].toString().toIntOrNull()
     return Expression(
             col1 = col1,

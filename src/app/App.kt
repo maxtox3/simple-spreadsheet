@@ -20,7 +20,6 @@ class App : RComponent<RProps, AppState>() {
     }
 
     override fun RBuilder.render() {
-        console.log("render state app ${state.cells}")
         div("container") {
             h1("text-center") {
                 +"SpreadSheet"
@@ -64,7 +63,6 @@ class App : RComponent<RProps, AppState>() {
             }?.value?.value?.toDoubleOrNull()
 
             if (value1 != null && value2 != null) {
-                console.log("inside if")
                 resultValue = when (expressionModel.operand) {
                     '+' -> value1.plus(value2)
                     '-' -> value1.minus(value2)
